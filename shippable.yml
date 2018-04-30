@@ -43,9 +43,9 @@ build:
     - memcached -V
     - psql --version
     - redis-server -v
-    - riak version
-    - which mysql
-    - mysql -V #|| true
+   # - riak version
+   # - which mysql
+   # - mysql -V #|| true
     - which sqlite3 #|| true
     
   #  - docker pull shippabledocker/sample_node_pvt:ecr
@@ -56,4 +56,3 @@ build:
  #Docker integration
  #   - integrationName: ship-docker
  #     type: dockerRegistryLogin
-
