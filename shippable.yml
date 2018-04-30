@@ -4,19 +4,19 @@ runtime:
   nodePool: dynamic__x86_64__CentOS_7__c4_large
   
 services:
- # - cassandra 
-  - couchdb 
- # - elasticsearch 
- # - memcached 
- # - mongodb 
- # - mysql 
- # - neo4j 
- # - postgres 
- # - rabbitmq 
- # - redis  
- # - riak 
- # - selenium 
- # - sqlite 
+  - cassandra 
+  #- couchdb 
+  - elasticsearch 
+  - memcached 
+  - mongodb 
+  - mysql 
+  - neo4j 
+  - postgres 
+  - rabbitmq 
+  - redis  
+  - riak 
+  - selenium 
+  - sqlite 
   
 build:
   pre_ci_boot:
@@ -27,7 +27,7 @@ build:
   ci:
     - python --version    
     - echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
-    - echo SHIPPABLE_COUCHDB_BINARY=$SHIPPABLE_COUCHDB_BINARY
+   # - echo SHIPPABLE_COUCHDB_BINARY=$SHIPPABLE_COUCHDB_BINARY
     - echo SHIPPABLE_ES_BINARY=$SHIPPABLE_ES_BINARY
     - echo SHIPPABLE_MEMCACHED_BINARY=$SHIPPABLE_MEMCACHED_BINARY
     - echo SHIPPABLE_MONGODB_BINARY=$SHIPPABLE_MONGODB_BINARY
