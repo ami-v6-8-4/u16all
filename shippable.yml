@@ -5,13 +5,13 @@ runtime:
    
 services:
   - cassandra 
-  #- couchdb 
+  - couchdb 
   - elasticsearch 
   - memcached 
   - mongodb 
- # - mysql 
+  - mysql 
   - neo4j 
- # - postgres 
+  - postgres 
   - rabbitmq 
   - redis  
   - riak 
@@ -21,7 +21,7 @@ services:
 build:
   pre_ci_boot:
     image_name: drydock/c7all
-    image_tag: master
+    image_tag: v6.3.4
     pull: true
     
   ci:
