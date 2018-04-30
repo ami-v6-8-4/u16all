@@ -11,7 +11,7 @@ services:
   - mongodb 
  # - mysql 
   - neo4j 
-  - postgres 
+ # - postgres 
   - rabbitmq 
   - redis  
   - riak 
@@ -41,11 +41,11 @@ build:
 
     - cassandra -v
     - memcached -V
-    - psql --version
+    #- psql --version
     - redis-server -v
     - riak version
-    - which mysql
-    - mysql -V #|| true
+    #- which mysql
+    #- mysql -V #|| true
     - which sqlite3 #|| true
     
   #  - docker pull shippabledocker/sample_node_pvt:ecr
