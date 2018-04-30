@@ -2,7 +2,7 @@ language: python
 
 runtime:
   nodePool: dynamic__x86_64__CentOS_7__c4_large
-  
+   
 services:
   - cassandra 
   #- couchdb 
