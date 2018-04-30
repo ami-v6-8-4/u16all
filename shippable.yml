@@ -4,19 +4,19 @@ runtime:
   nodePool: dynamic__x86_64__CentOS_7__c4_large
   
 services:
- # - cassandra 
-  - couchdb 
- # - elasticsearch 
- # - memcached 
- # - mongodb 
- # - mysql 
- # - neo4j 
- # - postgres 
- # - rabbitmq 
- # - redis  
- # - riak 
- # - selenium 
- # - sqlite 
+  - cassandra 
+ # - couchdb 
+  - elasticsearch 
+  - memcached 
+  - mongodb 
+  - mysql 
+  - neo4j 
+  - postgres 
+  - rabbitmq 
+  - redis  
+  - riak 
+  - selenium 
+  - sqlite 
   
 build:
   pre_ci_boot:
