@@ -27,7 +27,7 @@ build:
   ci:
     - python --version    
     - echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
-   # - echo SHIPPABLE_COUCHDB_BINARY=$SHIPPABLE_COUCHDB_BINARY
+    - echo SHIPPABLE_COUCHDB_BINARY=$SHIPPABLE_COUCHDB_BINARY
     - echo SHIPPABLE_ES_BINARY=$SHIPPABLE_ES_BINARY
     - echo SHIPPABLE_MEMCACHED_BINARY=$SHIPPABLE_MEMCACHED_BINARY
     - echo SHIPPABLE_MONGODB_BINARY=$SHIPPABLE_MONGODB_BINARY
@@ -41,11 +41,11 @@ build:
 
     - cassandra -v
     - memcached -V
-    #- psql --version
+    - psql --version
     - redis-server -v
     - riak version
-    #- which mysql
-    #- mysql -V #|| true
+    - which mysql
+    - mysql -V #|| true
     - which sqlite3 #|| true
     
   #  - docker pull shippabledocker/sample_node_pvt:ecr
