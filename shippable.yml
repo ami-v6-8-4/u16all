@@ -40,10 +40,8 @@ build:
     - echo SHIPPABLE_SELENIUM_v=$SHIPPABLE_SELENIUM_BINARY    
     - echo SHIPPABLE_SQLITE_BINARY=$SHIPPABLE_SQLITE_BINARY
     
-   # - service mysqld status
-   # - service riak status
-   # - service rabbitmq status
-    - curl localhost:15672
+    - nc -vz localhost 5672
+    
     - cassandra -v
     - memcached -V
     - psql --version
