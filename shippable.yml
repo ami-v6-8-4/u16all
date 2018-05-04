@@ -40,7 +40,7 @@ build:
     - echo SHIPPABLE_SELENIUM_v=$SHIPPABLE_SELENIUM_BINARY    
     - echo SHIPPABLE_SQLITE_BINARY=$SHIPPABLE_SQLITE_BINARY
     
-    - service mysqld status
+   # - service mysqld status
     - service riak status
     - service rabbitmq status
     - cassandra -v
