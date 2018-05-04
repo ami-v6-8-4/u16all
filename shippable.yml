@@ -40,7 +40,7 @@ build:
     - echo SHIPPABLE_SELENIUM_v=$SHIPPABLE_SELENIUM_BINARY    
     - echo SHIPPABLE_SQLITE_BINARY=$SHIPPABLE_SQLITE_BINARY
     
-    - nc -vz localhost 5672
+    - ncat -vz localhost 5672
     
     - cassandra -v
     - memcached -V
