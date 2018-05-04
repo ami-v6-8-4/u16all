@@ -43,6 +43,7 @@ build:
    # - service mysqld status
    # - service riak status
    # - service rabbitmq status
+    - curl localhost:15672
     - cassandra -v
     - memcached -V
     - psql --version
