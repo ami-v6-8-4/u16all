@@ -1,7 +1,7 @@
 language: python
 
-#runtime:
-#  nodePool: dynamic__x86_64__CentOS_7__c4_large
+runtime:
+  nodePool: dynamic__x86_64__CentOS_7__c4_large
    
 services:
   - cassandra 
@@ -25,7 +25,8 @@ build:
     pull: true
     
   ci:
-    - python --version    
+    - python --version  
+    - cd /tmp
     - echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
     - echo SHIPPABLE_COUCHDB_BINARY=$SHIPPABLE_COUCHDB_BINARY
     - echo SHIPPABLE_ES_BINARY=$SHIPPABLE_ES_BINARY
