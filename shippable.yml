@@ -39,21 +39,24 @@ build:
     - echo SHIPPABLE_REDIS_BINARY=$SHIPPABLE_REDIS_BINARY
     - echo SHIPPABLE_SELENIUM_v=$SHIPPABLE_SELENIUM_BINARY    
     - echo SHIPPABLE_SQLITE_BINARY=$SHIPPABLE_SQLITE_BINARY
-
+    
+    - service mysqld status
+    - service riak status
+    - service rabbitmq status
     - cassandra -v
     - memcached -V
-   # - psql --version
+    - psql --version
     - redis-server -v
     - riak version
-    #- which mysql
-    #- mysql -V #|| true
+    - which mysql
+    - mysql -V #|| true
     - which sqlite3 #|| true
     
-  #  - docker pull shippabledocker/sample_node_pvt:ecr
+    - docker pull shippabledocker/sample_node_pvt:ecr
     
-#integrations:
+integrations:
     
-#  hub:
+  hub:
  #Docker integration
- #   - integrationName: ship-docker
- #     type: dockerRegistryLogin
+    - integrationName: ship-docker
+      type: dockerRegistryLogin
