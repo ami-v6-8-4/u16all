@@ -41,8 +41,8 @@ build:
     - echo SHIPPABLE_SQLITE_BINARY=$SHIPPABLE_SQLITE_BINARY
     
    # - service mysqld status
-    - service riak status
-    - service rabbitmq status
+   # - service riak status
+   # - service rabbitmq status
     - cassandra -v
     - memcached -V
     - psql --version
